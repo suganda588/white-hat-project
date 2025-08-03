@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Hat Project - Ultra Hacker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+
+  <div id="contentWrapper">
+    <div id="logoSection">
+      <img src="assets/indonesia-glow.svg" class="logo-glow" alt="Bendera Indonesia">
+      <img src="assets/spider-glow.svg" class="logo-spider" alt="Spider Hacker">
+    </div>
+
+    <h1>⚡ WHITE HAT PROJECT ⚡</h1>
+
+    <input type="password" id="password" class="input-box" placeholder="Masukkan Kata Sandi">
+    <button id="hackBtn" class="hack-btn">HACK</button>
+
+    <div id="accessSuccess" class="access-success">ACCESS SUCCESS</div>
+    <div id="accessDenied" class="access-denied">ACCESS DENIED</div>
+
+    <div id="loading" class="loading">LOADING...</div>
+    <div id="progressBox" class="progress-container">
+      <div id="progressBar" class="progress-bar"></div>
+      <div id="percent" class="progress-text">1%</div>
+    </div>
+
+    <div id="traceLog"></div>
+    <div id="faceText">FACE RECOGNITION</div>
+    <div id="scanFace"><div id="scanLine"></div></div>
+
+    <div id="kontakContainer" class="container">
+      <div class="kontak"><div class="nama">Rizki Saputra</div><div class="nomor">+62822****2161</div><button class="copy-btn" data-number="6282267972161">Copy</button></div>
+      <div class="kontak"><div class="nama">Wanda Sugiansyah</div><div class="nomor">+85576****7575</div><button class="copy-btn" data-number="855762687575">Copy</button></div>
+      <div class="kontak"><div class="nama">Muhammad Nopal</div><div class="nomor">+62831****6039</div><button class="copy-btn" data-number="6283143486039">Copy</button></div>
+    </div>
+
+    <div id="liveLog"></div>
+  </div>
+
+  <div id="copyNotification">Nomor disalin!</div>
+  <div id="screenFade"></div>
+
+  <audio id="beepSound" src="sounds/beep.mp3"></audio>
+  <audio id="typingSound" src="sounds/typing.mp3"></audio>
+  <audio id="hackerSound" src="sounds/hacker-bgm.mp3" loop></audio>
+  <audio id="whooshSound" src="sounds/whoosh.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
